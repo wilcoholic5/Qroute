@@ -1,6 +1,6 @@
 <?php
 $config = [
-    "viewDirectory" => "../views",
+    "publicRoot" => __DIR__ . "/views",
     "routes" => [
         "/" => [
             "controller" => Portfolio\Portfolio::class,

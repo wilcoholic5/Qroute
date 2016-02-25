@@ -15,8 +15,9 @@ spl_autoload_register($loader);
 
 // Load config
 require "config/app.config.php";
+$config["publicRoot"] = __DIR__."/views";
 
 // Load TWIG
 Twig_Autoloader::register();
-$loader = new Twig_Loader_Filesystem($config["viewDirectory"]);
+$loader = new Twig_Loader_Filesystem($config["publicRoot"]);
 $twig = new Twig_Environment($loader);

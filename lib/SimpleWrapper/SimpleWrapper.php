@@ -1,6 +1,8 @@
 <?php
 namespace SimpleWrapper;
+
 use Twig_Environment as Twig;
+
 class SimpleWrapper
 {
     /*
