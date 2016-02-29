@@ -2,10 +2,6 @@
 require_once "../bootstrap.php";
 
 use SimpleWrapper\SimpleWrapper;
-
-$router = new SimpleWrapper($twig, $config);
-
-$request = $router->routeOrPrepare($_SERVER);
-if (is_array($request)) {
-    echo "404";
-}
+$klein = new \Klein\Klein();
+$wrapper = new SimpleWrapper($_SERVER["REQUEST_URI"], $twig, $klein, $config);
+$wrapper->routeOrPrepare();

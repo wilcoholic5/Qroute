@@ -7,6 +7,11 @@ class Portfolio extends AbstractController
 
     public function index()
     {
-        echo $this->twig->loadTemplate(SELF::SITE_PREFIX . "/index.html.twig")->render(["root" => $this->config["publicRoot"]]);
+        echo $this->twig->loadTemplate(SELF::SITE_PREFIX . "/index.html.twig")->render([]);
+    }
+
+    public function aboutMe($data)
+    {
+        echo "Hello " . $data["name"];
     }
 }

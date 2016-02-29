@@ -2,6 +2,8 @@
   "require": {
     "monolog/monolog": "1.0.*",
     "twig/twig": "1.24.0",
-    "aura/router": "3.0.0"
+    "aura/router": "3.0.0",
+    "guzzle/guzzle": "^3.9",
+    "klein/klein": "^2.1"
   }
 }
